@@ -1,0 +1,32 @@
+.form {
+  background-color: $base-blue;
+}
+
+.form__title {
+  color: $base-white;
+}
+
+.form__input {
+  font-family: $roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  color: $input;
+  background-color: transparent;
+  border-bottom: 1px solid $input;
+  width: 290px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.form__button {
+  font-family: $roboto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  color: $base-white;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid $base-white;
+}
