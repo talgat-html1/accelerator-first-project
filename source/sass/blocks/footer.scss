@@ -1,0 +1,15 @@
+.footer {
+  background-color: $footer;
+}
+
+.footer__list {
+  @include list;
+}
+
+.footer__link {
+  font-family: $roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $base-white;
+}

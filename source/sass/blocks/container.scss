@@ -3,17 +3,13 @@
   width: 290px;
   padding: 0 15px;
   margin: 0 auto;
-}
 
-@media (min-width: $tablet) {
-  .container {
+  @media (min-width: $tablet)  {
     width: 678px;
     padding: 0 45px;
   }
-}
 
-@media (min-width: $desktop) {
-  .container {
+  @media (min-width: $desktop) {
     width: 1160px;
     padding: 0 103px;
   }

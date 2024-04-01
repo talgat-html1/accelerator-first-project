@@ -1,0 +1,19 @@
+.reviews__content {
+  background-color: $border-blue;
+}
+
+.reviews__content cite {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $base-white;
+  font-style: normal;
+}
+
+.reviews__content p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: center;
+  color: $base-white;
+}
