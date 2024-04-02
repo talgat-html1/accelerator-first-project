@@ -60,3 +60,17 @@
   text-transform: uppercase;
   color: $base-blue;
 }
+
+.price__title {
+  margin: 40px 0 30px;
+  text-align: center;
+}
+
+.price__buttons {
+  display: flex;
+  gap: 45px;
+}
+
+.price {
+  background-color: $add-white;
+}
