@@ -2,16 +2,38 @@
   font-family: $roboto;
   font-size: 16px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 32px;
   color: rgba($base-blue, 0.5);
   background-color: transparent;
   border: none;
   padding: 0;
+
+  &:hover {
+    color: rgba($base-blue, 0.7);
+    box-shadow: 0 2px 0 $tab-border;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  &:focus {
+    color: $base-blue;
+    outline: none;
+    box-shadow: 0 2px 0 $base-blue;
+  }
+
+  &:active {
+    box-shadow: 0 2px 0 $banner;
+  }
+
+  &:disabled {
+    box-shadow: 0 2px 0 rgba($base-blue, 0.3);
+    cursor: default;
+  }
 }
 
 .price__button--active {
   color: $base-blue;
-  border-bottom: 2px solid $tab;
+  box-shadow: 0 2px 0 $tab;
 }
 
 .price__list {
@@ -22,6 +44,7 @@
   font-size: 22px;
   line-height: 22px;
   text-align: center;
+  margin: 0;
 }
 
 .price__time {
@@ -35,6 +58,12 @@
   line-height: 120px;
   text-align: center;
   color: $price-shadow;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 100px;
+  color: $price-shadow;
+  transform: translateX(-50%);
 }
 
 .price__cost {
@@ -43,6 +72,8 @@
   font-weight: 700;
   text-align: center;
   color: $add-blue;
+  z-index: 1;
+  margin-top: 87px;
 }
 
 .price__sign {
@@ -51,6 +82,7 @@
   font-weight: 500;
   text-align: center;
   color: $base-blue;
+  z-index: 1;
 }
 
 .price__link {
@@ -59,4 +91,107 @@
   line-height: 12px;
   text-transform: uppercase;
   color: $base-blue;
+  width: 195px;
+  height: 66px;
+  padding: 25px 42px 25px 42px;
+  border: 2px solid $base-blue;
+
+  &:hover {
+    color: $base-white;
+    background: transparent $button-gradient;
+    border-image: $button-gradient 30;
+  }
+
+  &:focus {
+    color: $base-white;
+    background-image: $button-gradient;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 1;
+    color: rgba($base-white, 0.7);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.price__link--hover {
+  &:hover {
+    color: $base-white;
+    background: transparent $button-gradient;
+    border-image: $button-gradient 30;
+  }
+}
+
+.price__title {
+  margin: 40px 0 30px;
+  text-align: center;
+}
+
+.price__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid rgba($tab-border, 0.2);
+}
+
+.price {
+  background-color: $add-white;
+}
+
+.price__item {
+  background-color: $base-white;
+  padding: 50px 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 18px;
+  box-sizing: border-box;
+  transition: border 0.1s ease;
+  border: 7px solid transparent;
+
+  &:focus-within,
+  &--hover {
+    border-width: 7px;
+    border-style: solid;
+    border-image: $border-gradient 30;
+  }
+}
+
+.price__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.price__content {
+  display: none;
+}
+
+.price__content--active {
+  position: relative;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.price__container-image {
+  display: none;
+
+  @media (min-width: $tablet)  {
+    display: unset;
+  }
+}
+
+.price__title {
+  margin: 0;
+  padding: 40px 0 30px;
+}
+
+.price__container {
+  padding-bottom: 40px;
 }

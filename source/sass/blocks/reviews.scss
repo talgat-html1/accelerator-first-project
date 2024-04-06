@@ -1,5 +1,12 @@
+.reviews {
+  padding-bottom: 40px;
+}
+
 .reviews__content {
   background-color: $border-blue;
+  margin: 0 25px;
+  padding: 30px 25px 25px;
+  height: 328px;
 }
 
 .reviews__content cite {
@@ -8,6 +15,9 @@
   line-height: 20px;
   color: $base-white;
   font-style: normal;
+  text-align: center;
+  display: block;
+  margin-bottom: 16px;
 }
 
 .reviews__content p {
@@ -16,4 +26,27 @@
   line-height: 22px;
   text-align: center;
   color: $base-white;
+  margin: 0;
+}
+
+.reviews__title {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.reviews__button {
+  display: none;
+
+  @media (min-width: $tablet)  {
+    display: block;
+  }
+}
+
+.reviews__content figure {
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.reviews__content blockquote {
+  margin: 0;
 }

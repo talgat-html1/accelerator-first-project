@@ -1,3 +1,8 @@
+.contacts {
+  background-color: $base-white;
+  padding: 40px 0 12px;
+}
+
 .contacts__list {
   @include list;
 }
@@ -8,14 +13,23 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .contacts__text {
   font-size: 14px;
   font-style: normal;
   line-height: 20px;
+  margin-bottom: 28px;
+  display: block;
 }
 
 .contacts__link {
   color: $base-blue;
+}
+
+.contacts__title {
+  margin-top: 0;
+  margin-bottom: 42px;
 }
