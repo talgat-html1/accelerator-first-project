@@ -1,3 +1,8 @@
+.faq {
+  background-color: $add-white;
+  padding: 70px 0;
+}
+
 .faq__tab {
   font-family: $roboto;
   font-size: 16px;
@@ -7,11 +12,17 @@
   color: $base-blue;
   border: none;
   background-color: transparent;
+  width: 140px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid rgba($base-blue, 0.2);
+  cursor: pointer;
 }
 
 .faq__tab--active {
   color: $base-white;
   background: $button-gradient;
+  border: none;
 }
 
 .faq__list {
@@ -20,8 +31,7 @@
 
 .faq__tab-container button {
   font-family: $roboto;
-  padding: 24px 0;
-  padding-bottom: 21px;
+  padding: 21px 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,4 +41,98 @@
   line-height: 100%;
   text-align: start;
   border: none;
+  background-color: $add-white;
+  cursor: pointer;
+  position: relative;
+
+  ::after {
+    @include pseudo;
+    width: 14px;
+    height: 14px;
+	  background: linear-gradient(to bottom, transparent 91%, $faq 91%, $faq 7%, transparent 7%), linear-gradient(to right, transparent 91%, $faq 91%, $faq 7%, transparent 7%);
+    z-index: 3;
+    right: 8px;
+    top: 40px;
+  }
+
+  &::before {
+    @include pseudo;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 2;
+    right: 0;
+    top: 25px;
+    border: 1px solid $faq;
+  }
+}
+
+.faq__tab-container--opened button {
+  position: relative;
+
+  ::after {
+    @include pseudo;
+    width: 14px;
+    height: 1px;
+    background-color: $base-white;
+    z-index: 3;
+    right: 8px;
+    top: 40px;
+  }
+
+  ::before {
+    @include pseudo;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $faq;
+    z-index: 2;
+    right: 0;
+    top: 25px;
+    border: 1px solid transparent;
+  }
+}
+
+.faq__tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.faq__tab-container {
+  border-top: 1px solid $input;
+}
+
+.faq__tab-container p {
+  display: none;
+  margin: 0;
+  padding-bottom: 21px;
+}
+
+.faq__tab-container--opened p {
+  display: block;
+}
+
+.faq__item {
+  display: none;
+}
+
+.faq__item--active {
+  display: block;
+}
+
+.faq__tab-container button span {
+  width: 238px;
+}
+
+.faq__title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.faq__tab-container--border {
+  border-bottom: 1px solid $input;
 }

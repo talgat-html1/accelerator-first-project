@@ -1,9 +1,7 @@
-.form {
-  background-color: $base-blue;
-}
-
 .form__title {
   color: $base-white;
+  padding-top: 70px;
+  margin: 0 0 36px;
 }
 
 .form__input {
@@ -29,4 +27,12 @@
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid $base-white;
+  padding: 22px auto;
+  width: 290px;
+  min-height: 60px;
+}
+
+.form__input {
+  padding: 0;
+  margin-bottom: 36px;
 }

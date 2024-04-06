@@ -5,8 +5,7 @@
 @import "./global/mixins.scss";
 @import "./global/visually-hidden.scss";
 
-// /* BLOCKS */
-// @import "./blocks/main-header.scss";
+/* BLOCKS */
 @import "./blocks/hero.scss";
 @import "./blocks/container.scss";
 @import "./blocks/page.scss";
@@ -22,10 +21,7 @@
 @import "./blocks/contacts.scss";
 @import "./blocks/footer.scss";
 
-// /* VENDOR */
-// @import "../vendor/range-slider.scss";
-// @import "../vendor/nouislider.css";
-// // Vendor
-// // ---------------------------------
+/* VENDOR */
+@import "vendor/normalize.scss";
+@import "vendor/swiper.scss";
 
-// @import "vendor/normalize";

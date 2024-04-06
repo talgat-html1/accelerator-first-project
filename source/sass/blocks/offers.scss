@@ -1,5 +1,49 @@
+.offers {
+  text-align: center;
+}
+
 .offers__wrapper {
   background-color: $banner;
+  margin-bottom: 40px;
+}
+
+.offers__title {
+  margin: 40px auto;
+}
+
+.offers__info {
+  width: 320px;
+  padding: 30px 30px 36px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet)  {
+    width: 678px;
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1160px;
+    padding: 0 103px;
+  }
+}
+
+.offers__picture-container {
+  width: 320px;
+  height: 360px;
+  padding: 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet)  {
+    width: 678px;
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1160px;
+    padding: 0 103px;
+  }
 }
 
 .offers__info b {
@@ -7,12 +51,15 @@
   font-weight: 700;
   line-height: 64px;
   color: $base-white;
+  margin-bottom: 28px;
 }
 
 .offers__info span {
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
+  color: $base-white;
+  margin-bottom: 9px;
 }
 
 .offers__info h3 {
@@ -21,6 +68,8 @@
   line-height: 20px;
   text-align: center;
   color: $base-white;
+  margin-bottom: 28px;
+  margin-top: 0;
 }
 
 .offers__link {
@@ -41,6 +90,8 @@
   line-height: 22px;
   text-align: center;
   color: $border-blue;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .offers__card p {
@@ -49,6 +100,8 @@
   line-height: 22px;
   text-align: center;
   color: $border-blue;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .offers__card-link {
@@ -60,4 +113,15 @@
   text-transform: uppercase;
   text-decoration: underline;
   text-underline-offset: 5px;
+}
+
+.offers__card {
+  width: 290px;
+  min-height: 158px;
+  margin: 0 auto 30px;
+  padding: 20px 20px 26px;
+  text-align: center;
+  border-width: 7px;
+  border-style: solid;
+  border-image: $border-gradient 30;
 }

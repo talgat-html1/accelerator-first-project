@@ -28,6 +28,7 @@
 .about__image-container {
   margin-bottom: 36px;
   padding: 0;
+  height: 280px;
 
   @media (min-width: $tablet)  {
     min-width: 678px;
@@ -52,4 +53,26 @@
   z-index: 2;
   top: 50%;
   left: 50%;
+  padding: 0;
+  width: 98px;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid rgba($banner, 0.2);
+  transform: translate(-50%, -50%);
+  transition: border, opasity 0.6s;
+  cursor: pointer;
+
+  &::before {
+    @include pseudo;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: $button-gradient;
+    transition: color, background-color 0.6s;
+    z-index: -1;
+  }
 }
