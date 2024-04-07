@@ -5,12 +5,23 @@
   @media (min-width: $tablet) {
     padding: 60px 0;
   }
+
+  @media (min-width: $desktop) {
+    width: 683px;
+  }
+}
+
+.contacts__container {
+  @media (min-width: $desktop) {
+    width: 683px;
+    padding: 0;
+  }
 }
 
 .contacts__list {
   @include list;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     display: grid;
     width: 440px;
     margin: 0 auto;
