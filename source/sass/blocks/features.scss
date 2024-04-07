@@ -1,6 +1,10 @@
 .features {
   background-color: $add-white;
   padding: 40px 0;
+
+  @media (min-width: $tablet) {
+    padding: 60px 0;
+  }
 }
 
 .features__title {
@@ -9,7 +13,7 @@
   padding: 0 10px;
   width: 320px;
 
-  @media (min-width: $tablet)  {
+  @media (min-width: $tablet) {
     width: 678px;
     padding: 0 45px;
   }
@@ -27,6 +31,13 @@
   flex-direction: column;
   margin-bottom: 40px;
 
+  @media (min-width: $tablet) {
+    width: 324px;
+    margin: 0;
+    flex-direction: row;
+    padding: 0;
+  }
+
   @media (min-width: $desktop) {
     &:not(:nth-child(5n + 2)):not(:nth-child(5n)):not(:nth-child(5n - 1)) {
       padding-bottom: 38px;
@@ -38,6 +49,10 @@
 .features__item:nth-child(1),
 .features__item:nth-child(4) {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .features__item:last-child {
@@ -50,7 +65,13 @@
   justify-content: center;
   align-items: center;
   color: $base-white;
-  background-color: $base-blue;
+  background-color: $faq;
+
+  @media (min-width: $tablet) {
+    width: 320px;
+    margin: 40px 179px 40px;
+    padding: 35px;
+  }
 }
 
 .features__item:nth-child(5n + 3) span {
@@ -59,6 +80,11 @@
     line-height: 22px;
     color: $base-white;
     margin: 5px 0 20px;
+
+    @media (min-width: $tablet) {
+      font-size: 24px;
+      line-height: 100%;
+  }
 }
 
 .features__item:nth-child(5n + 3) b {
@@ -81,6 +107,11 @@
   background: linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (min-width: $tablet) {
+    font-size: 70px;
+    line-height: 100%;
+  }
 }
 
 .features__item p {
@@ -91,6 +122,12 @@
   text-align: center;
   margin: 0;
   color: $base-blue;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
 }
 
 .features__item h3 {
@@ -100,6 +137,11 @@
   text-align: center;
   color: $base-blue;
   margin: 12px 0;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    text-align: left;
+  }
 }
 
 .features__item div span {
@@ -108,6 +150,11 @@
   text-align: center;
   color: $color-desk;
   font-weight: 400;
+
+  @media (min-width: $tablet) {
+    line-height: 22px;
+    text-align: left;
+  }
 }
 
 .features__item div {
@@ -117,4 +164,13 @@
 
 .features__list {
   @include list;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    width: 678px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
 }
+
