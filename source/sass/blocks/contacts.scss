@@ -91,13 +91,13 @@
     display: block;
     grid-column: 2/3;
     grid-row: 1/2;
-  }
 
-  &:before {
-    @include pseudo;
-    height: 117px;
-    width: 1px;
-    background-color: $input;
-    left: 220px;
+    &:before {
+      @include pseudo;
+      height: 117px;
+      width: 1px;
+      background-color: $input;
+      left: 220px;
+    }
   }
 }

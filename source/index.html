@@ -16,13 +16,13 @@
     <link rel="preload" href="fonts/Alumni-Sans/Alumni-Sans-Extrabold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
-    <div class="page__container">
-      <header class="page__header">
-        <img class="page__logo" src="img/sprite/logo.svg" width="100" height="20" alt="Логотип Supergym.">
-        <a class="page__phone" href="tel:88005555555">8 800 555-55-55</a>
-      </header>
-    </div>
     <section class="hero" data-test="hero">
+      <div class="hero__page-container">
+        <header class="hero__page-header">
+          <img class="hero__logo" src="img/sprite/logo.svg" width="100" height="20" alt="Логотип Supergym.">
+          <a class="hero__phone" href="tel:88005555555">8 800 555-55-55</a>
+        </header>
+      </div>
       <div class="hero__wrapper">
         <div class="hero__container">
           <h1 class="hero__title">Фитнес центр</h1>
@@ -44,7 +44,7 @@
         </div>
       </div>
     </section>
-    <main>
+    <main class="page__main">
       <section class="about" data-test="about">
         <div class="about__container container">
           <h2 class="about__title page__title">Тренажёрный зал</h2>
