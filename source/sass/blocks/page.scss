@@ -10,8 +10,8 @@
   }
 
   @media (min-width: $desktop) {
-    font-size: 52px;
-    line-height: 52px;
+    font-size: 54px;
+    line-height: 54px;
   }
 }
 
@@ -46,7 +46,7 @@
 
   @media (min-width: $desktop) {
     width: 1160px;
-    padding: 0 103px;
+    padding: 30px 0;
   }
 }
 
@@ -84,5 +84,11 @@
   @media (min-width: $desktop) {
     width: 130px;
     height: 26px;
+  }
+}
+
+.page__form-container {
+  @media (min-width: $desktop) {
+    display: flex;
   }
 }

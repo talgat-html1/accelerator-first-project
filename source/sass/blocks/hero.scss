@@ -12,6 +12,12 @@
     margin: 0 auto 100px;
     gap: 30px;
   }
+
+  @media (min-width: $desktop) {
+    width: 941px;
+    margin: 0 auto 120px;
+    gap: 56px;
+  }
 }
 
 .hero__title {
@@ -77,6 +83,11 @@
     height: 56px;
     display: block;
   }
+
+  @media (min-width: $desktop) {
+    width: 270px;
+    height: 66px;
+  }
 }
 
 .hero__container {
@@ -92,8 +103,8 @@
   }
 
   @media (min-width: $desktop) {
-    width: 1160px;
-    padding: 0 103px;
+    width: 385px;
+    padding: 0;
   }
 }
 
@@ -102,10 +113,6 @@
 
   @media (min-width: $tablet) {
     display: block;
-  }
-
-  @media (min-width: $desktop) {
-
   }
 }
 
@@ -121,5 +128,9 @@
     display: block;
     width: 324px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 500px;
   }
 }

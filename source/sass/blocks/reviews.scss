@@ -22,6 +22,15 @@
     height: 242px;
     padding: 40px 30px;
   }
+
+  @media (min-width: $desktop) {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    height: 258px;
+    padding: 60px;
+    margin: 0 250px;
+  }
 }
 
 .reviews__wrapper {
@@ -71,6 +80,10 @@
     line-height: 54px;
     margin: 60px auto 35px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 100px auto 75px;
+  }
 }
 
 .reviews__button {
@@ -88,12 +101,22 @@
 .reviews__button--prev {
   top: 77px;
   left: 25px;
+
+  @media (min-width: $desktop)  {
+    top: unset;
+    left: 360px;
+  }
 }
 
 .reviews__button--next {
   transform: rotate(180deg);
   top: 77px;
   right: 25px;
+
+  @media (min-width: $desktop)  {
+    top: unset;
+    right: 360px;
+  }
 }
 
 .reviews__content figure {
