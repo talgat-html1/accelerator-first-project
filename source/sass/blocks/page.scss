@@ -3,6 +3,16 @@
   font-size: 32px;
   font-weight: 600;
   line-height: 32px;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 52px;
+    line-height: 52px;
+  }
 }
 
 .page__form-container {
@@ -11,4 +21,68 @@
 
 .page__form-contacts {
   padding-bottom: 70px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 0;
+  }
+}
+
+.page__container {
+  background: $base-gradient;
+}
+
+.page__header {
+  display: flex;
+  width: 290px;
+  padding: 16px 0;
+  gap: 41px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 678px;
+    justify-content: space-between;
+    padding: 31px 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1160px;
+    padding: 0 103px;
+  }
+}
+
+.page__phone {
+  font-family: $roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  color: $base-white;
+  display: block;
+  width: 149px;
+  height: 22px;
+  text-decoration: none;
+
+  @media (min-width: $tablet) {
+    width: 162px;
+    height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 176px;
+    height: 26px;
+  }
+}
+
+.page__logo {
+  width: 100px;
+  height: 20px;
+
+  @media (min-width: $tablet) {
+    width: 110px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 130px;
+    height: 26px;
+  }
 }

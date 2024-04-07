@@ -15,10 +15,11 @@ new Swiper('.juri', {
 
   breakpoints: {
     320: {
-      width: 227,
+      width: 290,
+      height: 280,
       slidesPerView: 1,
       initialSlide: 2,
-      spaceBetween: 60,
+      spaceBetween: 40,
     },
     768: {
       width: 560,

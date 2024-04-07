@@ -1,7 +1,22 @@
+.form {
+  @media (min-width: $tablet) {
+    padding: 60px 0;
+    text-align: center;
+    width: 440px;
+    margin: 0 auto;
+  }
+}
+
 .form__title {
   color: $base-white;
   padding-top: 70px;
   margin: 0 0 36px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    font-size: 54px;
+    line-height: 54px;
+  }
 }
 
 .form__input {
@@ -16,6 +31,13 @@
   border-top: none;
   border-right: none;
   border-left: none;
+  padding: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet) {
+    width: 205px;
+    min-height: 26px;
+  }
 }
 
 .form__button {
@@ -30,9 +52,16 @@
   padding: 22px auto;
   width: 290px;
   min-height: 60px;
+
+  @media (min-width: $tablet) {
+    width: 440px;
+    min-height: 66px;
+  }
 }
 
-.form__input {
-  padding: 0;
-  margin-bottom: 36px;
+.form__input-wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

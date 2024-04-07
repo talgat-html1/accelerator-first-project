@@ -1,6 +1,10 @@
 .faq {
   background-color: $add-white;
   padding: 70px 0;
+
+  @media (min-width: $tablet) {
+    padding: 60px 0;
+  }
 }
 
 .faq__tab {
@@ -17,6 +21,20 @@
   padding: 0;
   border: 1px solid rgba($base-blue, 0.2);
   cursor: pointer;
+
+  @media (min-width: $tablet) {
+    width: 162px;
+    height: 54px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.faq__container {
+  @media (min-width: $tablet) {
+    width: 678px;
+    padding: 0;
+  }
 }
 
 .faq__tab--active {
@@ -99,6 +117,12 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .faq__tab-container {
@@ -113,6 +137,13 @@
 
 .faq__tab-container--opened p {
   display: block;
+  line-height: 20px;
+
+  @media (min-width: $tablet) {
+    width: 500px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .faq__item {
@@ -125,12 +156,24 @@
 
 .faq__tab-container button span {
   width: 238px;
+  font-size: 20px;
+  line-height: 20px;
+
+  @media (min-width: $tablet) {
+    width: 550px;
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .faq__title {
   margin-top: 0;
   margin-bottom: 35px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 45px;
+  }
 }
 
 .faq__tab-container--border {
