@@ -21,7 +21,7 @@
 .contacts__list {
   @include list;
 
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
     display: grid;
     width: 440px;
     margin: 0 auto;
@@ -76,6 +76,7 @@
     font-size: 54px;
     line-height: 54px;
     text-align: center;
+    margin-bottom: 36px;
   }
 }
 

@@ -1,3 +1,9 @@
+.price {
+  @media (min-width: $tablet) {
+    min-height: 1730px;
+  }
+}
+
 .price__button {
   font-family: $roboto;
   font-size: 16px;
@@ -33,6 +39,7 @@
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 28px;
+    padding: 0;
   }
 }
 
@@ -92,6 +99,7 @@
   @media (min-width: $tablet) {
     font-size: 100px;
     line-height: 150px;
+    bottom: 2px;
   }
 }
 
@@ -107,6 +115,7 @@
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 90px;
+    margin: 67px 17px -8px 2px;
   }
 }
 
@@ -152,6 +161,12 @@
   &:disabled {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet) {
+    width: 250px;
+    padding: 25px 69px;
+    margin-bottom: 10px;
+  }
 }
 
 .price__link--hover {
@@ -168,7 +183,8 @@
   padding-top: 40px;
 
   @media (min-width: $tablet) {
-    margin: 60px 0 35px;
+    margin: 0 0 33px;
+    padding-top: 60px;
   }
 
   @media (min-width: $desktop) {
@@ -186,7 +202,7 @@
 
   @media (min-width: $tablet) {
     width: 310px;
-    margin: 0 auto 45px;
+    margin: 0 auto 50px;
   }
 
   @media (min-width: $desktop) {
@@ -243,7 +259,10 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 65px;
+    padding: 54px;
+    min-height: 460px;
+    width: 380px;
+    gap: 20px;
   }
 
   @media (min-width: $desktop) {
@@ -255,13 +274,8 @@
 .price__item:not(:last-child) {
   margin-bottom: 35px;
 
-  @media (min-width: $tablet) {
-    padding: 40px;
-  }
-
   @media (min-width: $desktop) {
     margin-bottom: 0;
-    padding: 65px;
   }
 }
 
@@ -281,8 +295,8 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet) {
-    width: 460px;
-    padding-bottom: 60px;
+    width: 380px;
+    padding: 0;
   }
 
   @media (min-width: $desktop) {

@@ -33,7 +33,7 @@
     line-height: 18px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     width: 260px;
     height: 54px;
     font-size: 18px;
@@ -101,10 +101,19 @@
     right: 0;
     border: 1px solid $faq;
   }
+
+  @media (min-width: $tablet) {
+    padding: 34px 0;
+  }
+
 }
 
 .faq__tab-container--opened button {
   position: relative;
+
+  @media (min-width: $tablet) {
+    padding: 35px 0 19px;
+  }
 
   ::after {
     @include pseudo;
@@ -141,6 +150,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop) {
@@ -158,6 +168,10 @@
   display: none;
   margin: 0;
   padding-bottom: 21px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 0;
+  }
 }
 
 .faq__tab-container--opened p {
@@ -166,9 +180,16 @@
   font-size: 16px;
 
   @media (min-width: $tablet) {
-    width: 500px;
+    width: 525px;
     font-size: 18px;
     line-height: 24px;
+    padding: 0px 0 25px;
+  }
+}
+
+.faq__tab-container--border button {
+  @media (min-width: $tablet) {
+    padding: 26px 0 25px;
   }
 }
 
@@ -191,7 +212,7 @@
     line-height: 22px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     width: 860px;
     font-size: 24px;
     line-height: 24px;
@@ -200,6 +221,10 @@
 
 .faq__tab-container:nth-child(1) button span {
   width: 210px;
+
+  @media (min-width: $tablet) {
+    width: unset;
+  }
 }
 
 .faq__title {

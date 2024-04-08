@@ -1,4 +1,8 @@
 .about {
+  @media (min-width: $tablet) {
+    padding-bottom: 15px;
+  }
+
   @media (min-width: $desktop) {
     display: flex;
     width: 1160px;
@@ -32,7 +36,7 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     width: 500px;
-    margin: 25px auto 94px;
+    margin: 20px auto 35px;
     text-align: center;
   }
 
@@ -44,11 +48,10 @@
 }
 
 .about__container {
-  margin: 40px auto 36px;
+  margin: 0 auto 36px;
 
   @media (min-width: $tablet) {
-    padding: 0;
-    margin: 60px auto 36px;
+    margin: 61px auto 36px;
   }
 
   @media (min-width: $desktop) {
@@ -93,6 +96,7 @@
 
   @media (min-width: $tablet) {
     min-width: 678px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop) {
@@ -108,7 +112,8 @@
 
   @media (min-width: $tablet) {
     width: 270px;
-    bottom: 56px;
+    bottom: 20px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop) {
