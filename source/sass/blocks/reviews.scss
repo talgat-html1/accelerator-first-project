@@ -9,7 +9,7 @@
 
 .reviews__content {
   background-color: $border-blue;
-  margin: 0;
+  margin: 0 auto;
   padding: 30px 25px;
   height: 328px;
   width: 240px;
@@ -72,7 +72,7 @@
 }
 
 .reviews__title {
-  margin: 40px auto;
+  margin: 41px auto 40px;
   text-align: center;
 
   @media (min-width: $tablet) {
@@ -89,7 +89,7 @@
 .reviews__button {
   display: none;
 
-  @media (min-width: $tablet)  {
+  @media (min-width: $tablet) {
     display: block;
     position: absolute;
     width: 20px;
@@ -102,7 +102,7 @@
   top: 77px;
   left: 25px;
 
-  @media (min-width: $desktop)  {
+  @media (min-width: $desktop) {
     top: unset;
     left: 360px;
   }
@@ -113,21 +113,21 @@
   top: 77px;
   right: 25px;
 
-  @media (min-width: $desktop)  {
+  @media (min-width: $desktop) {
     top: unset;
     right: 360px;
   }
 }
 
 .reviews__content figure {
-  margin: 0 0 10px 0;
+  margin: 0 0 2px;
   text-align: center;
 }
 
 .reviews__content blockquote {
   margin: 0;
 
-  @media (min-width: $tablet)  {
+  @media (min-width: $tablet) {
     display: block;
     width: 320px;
   }

@@ -72,7 +72,7 @@
 
   @media (min-width: $tablet) {
     width: 320px;
-    margin: 40px 179px 40px;
+    margin: 40px 179px;
     padding: 35px;
   }
 
@@ -105,16 +105,16 @@
 }
 
 .features__item:nth-child(5n + 3) b {
-    text-align: center;
-    background: $base-white;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  text-align: center;
+  background: $base-white;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .features__item:nth-child(5n + 3) p {
-    width: 220px;
-    text-align: center;
-    color: $base-white;
+  width: 220px;
+  text-align: center;
+  color: $base-white;
 }
 
 .features__item b {
@@ -206,4 +206,3 @@
     align-items: flex-start;
   }
 }
-

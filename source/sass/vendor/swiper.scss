@@ -43,7 +43,7 @@
   /* Fix of Webkit flickering */
   z-index: 0;
   display: block;
-  width: 227px;
+  width: 100%;
 
   @media (min-width: $tablet)  {
     width: 680px;

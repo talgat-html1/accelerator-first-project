@@ -19,7 +19,6 @@
   line-height: 16px;
   text-align: center;
   color: $base-blue;
-  border: none;
   background-color: transparent;
   width: 140px;
   height: 46px;
@@ -66,7 +65,7 @@
 
 .faq__tab-container button {
   font-family: $roboto;
-  padding: 21px 0 20px;
+  padding: 20px 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,9 +81,10 @@
 
   ::after {
     @include pseudo;
+
     width: 14px;
     height: 14px;
-	  background: linear-gradient(to bottom, transparent 91%, $faq 91%, $faq 7%, transparent 7%), linear-gradient(to right, transparent 91%, $faq 91%, $faq 7%, transparent 7%);
+    background: linear-gradient(to bottom, transparent 91%, $faq 91%, $faq 7%, transparent 7%), linear-gradient(to right, transparent 91%, $faq 91%, $faq 7%, transparent 7%);
     z-index: 3;
     right: 8px;
     top: 40px;
@@ -92,13 +92,13 @@
 
   &::before {
     @include pseudo;
+
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: transparent;
     z-index: 2;
     right: 0;
-    top: 25px;
     border: 1px solid $faq;
   }
 }
@@ -108,6 +108,7 @@
 
   ::after {
     @include pseudo;
+
     width: 14px;
     height: 1px;
     background-color: $base-white;
@@ -118,6 +119,7 @@
 
   ::before {
     @include pseudo;
+
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -161,6 +163,7 @@
 .faq__tab-container--opened p {
   display: block;
   line-height: 20px;
+  font-size: 16px;
 
   @media (min-width: $tablet) {
     width: 500px;
@@ -193,6 +196,10 @@
     font-size: 24px;
     line-height: 24px;
   }
+}
+
+.faq__tab-container:nth-child(1) button span {
+  width: 210px;
 }
 
 .faq__title {

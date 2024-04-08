@@ -2,7 +2,7 @@
   background-color: $banner;
   color: $base-white;
   width: 290px;
-  margin: 25px auto;
+  margin: 27px auto;
   padding: 0;
 
   @media (min-width: $tablet) {
@@ -46,6 +46,8 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 3px;
+  margin-right: 2px;
 
   @media (min-width: $tablet) {
     font-size: 14px;
@@ -110,7 +112,7 @@
 
   @media (min-width: $desktop) {
     width: 500px;
-    padding: 60px 80x 98px;
+    padding: 60px 80px 98px;
   }
 }
 

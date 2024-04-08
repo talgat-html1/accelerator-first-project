@@ -1,6 +1,13 @@
 .juri {
+  width: 227px;
   margin-bottom: 40px;
   position: relative;
+}
+
+.juri__content {
+  width: 227px;
+  margin: 0 auto;
+  height: 280px;
 }
 
 .juri__name {
@@ -9,7 +16,7 @@
   line-height: 22px;
   position: absolute;
   bottom: 25px;
-  left: 112px;
+  left: 113px;
   transform: translateX(-50%);
   width: 190px;
   text-align: center;
@@ -21,7 +28,7 @@
 }
 
 .juri__name--card {
-  top: 44px;
+  top: 42px;
   left: 115px;
   width: 190px;
 
@@ -38,7 +45,7 @@
   color: $juri-hover;
   display: none;
   width: 50px;
-  margin: 0 auto 33px;
+  margin: 0 auto 20px;
   padding-top: 70px;
 
   @media (min-width: $tablet) {
@@ -55,7 +62,7 @@
 }
 
 .juri__list {
-  margin-left: 10px;
+  margin-left: 20px;
   padding-right: 10px;
   padding-left: 30px;
   padding-top: 10px;
@@ -69,7 +76,7 @@
 }
 
 .juri__title {
-  margin: 40px 0 20px;
+  margin: 38px 0 20px;
   text-align: center;
   padding: 0 10px;
 
@@ -135,7 +142,7 @@
 .juri__card {
   display: none;
   position: absolute;
-  bottom: 8px;
+  bottom: 0px;
   left: 0;
   height: 280px;
   width: 227px;
@@ -153,11 +160,8 @@
   }
 }
 
-.juri__slide {
-  width: 227px;
+.juri__content {
   position: relative;
-  height: 280px;
-  margin: 0 auto;
   color: $base-white;
 
   &:focus {

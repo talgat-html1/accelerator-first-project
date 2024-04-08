@@ -1,6 +1,6 @@
 .contacts {
   background-color: $base-white;
-  padding: 40px 0 12px;
+  padding: 36px 0 12px;
 
   @media (min-width: $tablet) {
     padding: 60px 0;
@@ -55,6 +55,7 @@
   line-height: 20px;
   margin-bottom: 28px;
   display: block;
+  letter-spacing: 0.01em;
 
   @media (min-width: $tablet) {
     line-height: 22px;
@@ -69,7 +70,7 @@
 
 .contacts__title {
   margin-top: 0;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet) {
     font-size: 54px;
@@ -92,8 +93,9 @@
     grid-column: 2/3;
     grid-row: 1/2;
 
-    &:before {
+    &::before {
       @include pseudo;
+
       height: 117px;
       width: 1px;
       background-color: $input;
