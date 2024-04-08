@@ -32,7 +32,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 100px auto 70px;
+    margin: 100px auto 73px;
   }
 }
 
@@ -106,6 +106,10 @@
     margin-left: 25px;
     margin-top: 10px;
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+  }
 }
 
 .offers__info span {
@@ -120,6 +124,11 @@
     line-height: 24px;
     margin-left: 25px;
     margin-top: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+    margin-top: 0;
   }
 }
 
@@ -139,6 +148,10 @@
     margin-left: 25px;
     margin-top: 13px;
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+  }
 }
 
 .offers__link {
@@ -156,6 +169,11 @@
     text-align: left;
     margin-left: 25px;
     margin-top: 132px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+    margin-top: 130px;
   }
 }
 
@@ -182,6 +200,11 @@
     grid-template-rows: 36px 48px 44px;
     align-items: flex-end;
   }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 
 .offers__card p {
@@ -198,6 +221,10 @@
     line-height: 24px;
     text-align: left;
     margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 38px;
   }
 }
 
@@ -232,7 +259,7 @@
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 560px;
     min-height: 174px;
     margin: 0;

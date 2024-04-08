@@ -31,6 +31,11 @@
     column-gap: 60px;
     position: relative;
   }
+
+  @media (min-width: $desktop) {
+    width: 477px;
+    column-gap: 108px;
+  }
 }
 
 .contacts__subtitle {
@@ -78,6 +83,12 @@
     text-align: center;
     margin-bottom: 36px;
   }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+    width: 477px;
+    margin: 0 auto 35px;
+  }
 }
 
 .contacts__item--schedule {
@@ -101,6 +112,10 @@
       width: 1px;
       background-color: $input;
       left: 220px;
+
+      @media (min-width: $desktop) {
+        left: 239px;
+      }
     }
   }
 }
