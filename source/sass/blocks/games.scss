@@ -2,7 +2,7 @@
   background-color: $banner;
   color: $base-white;
   width: 290px;
-  margin: 25px auto;
+  margin: 27px auto;
   padding: 0;
 
   @media (min-width: $tablet) {
@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop) {
     width: 1160px;
-    margin: 100px auto;
+    margin: 96px auto;
   }
 }
 
@@ -24,9 +24,14 @@
   text-transform: uppercase;
   margin: 0;
 
+  @media (min-width: $tablet) {
+    width: 120px;
+  }
+
   @media (min-width: $desktop) {
     font-size: 80px;
     line-height: 96px;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -39,6 +44,14 @@
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 24px;
+    padding-bottom: 1px;
+    width: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 5px;
+    width: 95px;
+    margin-left: 5px;
   }
 }
 
@@ -46,10 +59,18 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 3px;
+  margin-right: 2px;
 
   @media (min-width: $tablet) {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 16px;
+    margin-left: 5px;
+    padding-top: 3px;
   }
 }
 
@@ -58,9 +79,15 @@
   font-weight: 700;
   line-height: 24px;
 
+  @media (min-width: $tablet) {
+    padding-top: 10px;
+  }
+
   @media (min-width: $desktop) {
     font-size: 40px;
     line-height: 40px;
+    padding-top: 6px;
+    padding-left: 5px;
   }
 }
 
@@ -75,6 +102,11 @@
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 24px;
+    padding: 5px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 30px 0;
   }
 }
 
@@ -91,6 +123,10 @@
   border: 2px solid $base-white;
   cursor: pointer;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    padding: 22px 55px;
+  }
 
   @media (min-width: $desktop) {
     width: 340px;
@@ -110,7 +146,7 @@
 
   @media (min-width: $desktop) {
     width: 500px;
-    padding: 60px 80x 98px;
+    padding: 60px 80px 98px;
   }
 }
 
@@ -139,6 +175,12 @@
   width: 48px;
   justify-content: space-between;
   padding-top: 2px;
+
+  @media (min-width: $tablet) {
+    width: 100px;
+    padding-right: 44px;
+    margin-bottom: 8px;
+  }
 }
 
 .games__number--border {
@@ -158,6 +200,7 @@
   @media (min-width: $desktop) {
     width: 660px;
     height: 500px;
+    padding-top: 0;
   }
 }
 

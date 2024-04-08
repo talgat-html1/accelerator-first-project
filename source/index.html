@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPERGYM</title>
     <link rel="stylesheet" href="sass/style.scss">
-    <!-- <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicons/apple.png"> -->
-    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
-    <link rel="preload" href="fonts/Roboto-Condensed/Roboto-Condensed-Light.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Roboto-Condensed/Roboto-Condensed-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Roboto-Condensed/Roboto-Condensed-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Alumni-Sans/Alumni-Sans-Semibold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Alumni-Sans/Alumni-Sans-Extrabold.woff2" as="font" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans/alumni-sans-semibold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans/alumni-sans-extrabold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
-    <div class="page__container">
-      <header class="page__header">
-        <img class="page__logo" src="img/sprite/logo.svg" width="100" height="20" alt="Логотип Supergym.">
-        <a class="page__phone" href="tel:88005555555">8 800 555-55-55</a>
-      </header>
-    </div>
     <section class="hero" data-test="hero">
+      <div class="hero__page-container">
+        <header class="hero__page-header">
+          <img class="hero__logo" src="img/sprite/logo.svg" width="100" height="20" alt="Логотип Supergym.">
+          <a class="hero__phone" href="tel:88005555555">8 800 555-55-55</a>
+        </header>
+      </div>
       <div class="hero__wrapper">
         <div class="hero__container">
           <h1 class="hero__title">Фитнес центр</h1>
@@ -32,7 +31,7 @@
             <span class="hero__text">Групповые занятия</span>
             <span class="hero__text">Кардио-зона</span>
           </div>
-          <a class="hero__link" href="#subscription">Купить абонемент</a>
+          <a class="hero__link" href="subscription">Купить абонемент</a>
         </div>
         <div class="hero__image-wrapper">
           <picture>
@@ -44,13 +43,13 @@
         </div>
       </div>
     </section>
-    <main>
+    <main class="page__main">
       <section class="about" data-test="about">
         <div class="about__container container">
           <h2 class="about__title page__title">Тренажёрный зал</h2>
           <h3 class="about__subtitle">Просторный зал площадью 900 кв/м</h3>
           <p>Supergym – самый большой фитнес центр за&nbsp;Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
-          <p>В зале расположены отдельная зона для Crossfit и кардио-зона c 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          <p>В зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона c 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для&nbsp;различных видов групповых занятий.</p>
         </div>
         <div class="about__image-container container">
           <picture>
@@ -79,7 +78,7 @@
           </button>
         </div>
       </section>
-      <section class="price" data-test="price" id=#subscription>
+      <section class="price" data-test="price" id="subscription">
         <div class="price__container container">
           <h2 class="price__title page__title">Абонементы</h2>
           <div class="price__buttons">
@@ -198,147 +197,163 @@
         </button>
         <div class="juri__slider container swiper-wrapper">
           <div class="juri__slide juri__slide-1 swiper-slide" tabindex="0">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-1-tablet@1x.webp 1x, img/juri-1-tablet@2x.webp 2x" width="260" height="300">
-              <source type="image/webp" srcset="img/juri-1-mobile@1x.webp 1x, img/juri-1-mobile@2x.webp 2x" width="227" height="280">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-1-tablet@1x.png 1x, img/juri-1-tablet@2x.png 2x" width="260" height="300">
-              <img class="juri__image" src="img/juri-1-mobile@1x.png" srcset="img/juri-1-mobile@2x.png 2x" width="227" height="280" alt="Первый член жюри.">
-            </picture>
-            <span class="juri__name">Анна Павлова</span>
-            <div class="juri__card">
-              <span class="juri__name juri__name--card">Анна Павлова</span>
-              <span class="juri__text">CrossFit</span>
-              <ul class="juri__list">
-                <li class="juri__item">Certified Level 3 Trainer</li>
-                <li class="juri__item">Победитель чемпионата России по CrossFit</li>
-                <li class="juri__item">Опыт — 6 лет</li>
-              </ul>
+            <div class="juri__content">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-1-tablet@1x.webp 1x, img/juri-1-tablet@2x.webp 2x" width="260" height="300">
+                <source type="image/webp" srcset="img/juri-1-mobile@1x.webp 1x, img/juri-1-mobile@2x.webp 2x" width="227" height="280">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-1-tablet@1x.png 1x, img/juri-1-tablet@2x.png 2x" width="260" height="300">
+                <img class="juri__image" src="img/juri-1-mobile@1x.png" srcset="img/juri-1-mobile@2x.png 2x" width="227" height="280" alt="Первый член жюри.">
+              </picture>
+              <span class="juri__name">Анна Павлова</span>
+              <div class="juri__card">
+                <span class="juri__name juri__name--card">Анна Павлова</span>
+                <span class="juri__text">CrossFit</span>
+                <ul class="juri__list">
+                  <li class="juri__item">Certified Level 3 Trainer</li>
+                  <li class="juri__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="juri__slide juri__slide-2 swiper-slide" tabindex="0">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-2-tablet@1x.webp 1x, img/juri-2-tablet@2x.webp 2x" width="260" height="300">
-              <source type="image/webp" srcset="img/juri-2-mobile@1x.webp 1x, img/juri-2-mobile@2x.webp 2x" width="227" height="280">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-2-tablet@1x.png 1x, img/juri-2-tablet@2x.png 2x" width="260" height="300">
-              <img class="juri__image" src="img/juri-2-mobile@1x.png" srcset="img/juri-2-mobile@2x.png 2x" width="227" height="280" alt="Второй член жюри.">
-            </picture>
-            <span class="juri__name">Алексей Лавров</span>
-            <div class="juri__card">
-              <span class="juri__name juri__name--card">Алексей Лавров</span>
-              <span class="juri__text">CrossFit</span>
-              <ul class="juri__list">
-                <li class="juri__item">Certified Level 3 Trainer</li>
-                <li class="juri__item">Победитель чемпионата России по CrossFit</li>
-                <li class="juri__item">Опыт — 5 лет</li>
-              </ul>
+            <div class="juri__content">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-2-tablet@1x.webp 1x, img/juri-2-tablet@2x.webp 2x" width="260" height="300">
+                <source type="image/webp" srcset="img/juri-2-mobile@1x.webp 1x, img/juri-2-mobile@2x.webp 2x" width="227" height="280">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-2-tablet@1x.png 1x, img/juri-2-tablet@2x.png 2x" width="260" height="300">
+                <img class="juri__image" src="img/juri-2-mobile@1x.png" srcset="img/juri-2-mobile@2x.png 2x" width="227" height="280" alt="Второй член жюри.">
+              </picture>
+              <span class="juri__name">Алексей Лавров</span>
+              <div class="juri__card">
+                <span class="juri__name juri__name--card">Алексей Лавров</span>
+                <span class="juri__text">CrossFit</span>
+                <ul class="juri__list">
+                  <li class="juri__item">Certified Level 3 Trainer</li>
+                  <li class="juri__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri__item">Опыт — 5 лет</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="juri__slide juri__slide-3 swiper-slide" tabindex="0">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-3-tablet@1x.webp 1x, img/juri-3-tablet@2x.webp 2x" width="260" height="300">
-              <source type="image/webp" srcset="img/juri-3-mobile@1x.webp 1x, img/juri-3-mobile@2x.webp 2x" width="227" height="280">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-3-tablet@1x.png 1x, img/juri-3-tablet@2x.png 2x" width="260" height="300">
-              <img class="juri__image" src="img/juri-3-mobile@1x.png" srcset="img/juri-3-mobile@2x.png 2x" width="227" height="280" alt="Третий член жюри.">
-            </picture>
-            <span class="juri__name">Александр Пашков</span>
-            <div class="juri__card">
-              <span class="juri__name juri__name--card">Александр Пашков</span>
-              <span class="juri__text">CrossFit</span>
-              <ul class="juri__list">
-                <li class="juri__item">Certified Level 3 Trainer</li>
-                <li class="juri__item">Победитель чемпионата России по CrossFit</li>
-                <li class="juri__item">Опыт — 6 лет</li>
-              </ul>
+            <div class="juri__content">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-3-tablet@1x.webp 1x, img/juri-3-tablet@2x.webp 2x" width="260" height="300">
+                <source type="image/webp" srcset="img/juri-3-mobile@1x.webp 1x, img/juri-3-mobile@2x.webp 2x" width="227" height="280">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-3-tablet@1x.png 1x, img/juri-3-tablet@2x.png 2x" width="260" height="300">
+                <img class="juri__image" src="img/juri-3-mobile@1x.png" srcset="img/juri-3-mobile@2x.png 2x" width="227" height="280" alt="Третий член жюри.">
+              </picture>
+              <span class="juri__name">Александр Пашков</span>
+              <div class="juri__card">
+                <span class="juri__name juri__name--card">Александр Пашков</span>
+                <span class="juri__text">CrossFit</span>
+                <ul class="juri__list">
+                  <li class="juri__item">Certified Level 3 Trainer</li>
+                  <li class="juri__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="juri__slide juri__slide-4 swiper-slide" tabindex="0">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-4-tablet@1x.webp 1x, img/juri-4-tablet@2x.webp 2x" width="260" height="300">
-              <source type="image/webp" srcset="img/juri-4-mobile@1x.webp 1x, img/juri-4-mobile@2x.webp 2x" width="227" height="280">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-4-tablet@1x.png 1x, img/juri-4-tablet@2x.png 2x" width="260" height="300">
-              <img class="juri__image" src="img/juri-4-mobile@1x.png" srcset="img/juri-4-mobile@2x.png 2x" width="227" height="280" alt="Четвертый член жюри.">
-            </picture>
-            <span class="juri__name">Мария Кетова</span>
-            <div class="juri__card">
-              <span class="juri__name juri__name--card">Мария Кетова</span>
-              <span class="juri__text">CrossFit</span>
-              <ul class="juri__list">
-                <li class="juri__item">Certified Level 3 Trainer</li>
-                <li class="juri__item">Победитель чемпионата России по CrossFit</li>
-                <li class="juri__item">Опыт — 4 года</li>
-              </ul>
+            <div class="juri__content">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-4-tablet@1x.webp 1x, img/juri-4-tablet@2x.webp 2x" width="260" height="300">
+                <source type="image/webp" srcset="img/juri-4-mobile@1x.webp 1x, img/juri-4-mobile@2x.webp 2x" width="227" height="280">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-4-tablet@1x.png 1x, img/juri-4-tablet@2x.png 2x" width="260" height="300">
+                <img class="juri__image" src="img/juri-4-mobile@1x.png" srcset="img/juri-4-mobile@2x.png 2x" width="227" height="280" alt="Четвертый член жюри.">
+              </picture>
+              <span class="juri__name">Мария Кетова</span>
+              <div class="juri__card">
+                <span class="juri__name juri__name--card">Мария Кетова</span>
+                <span class="juri__text">CrossFit</span>
+                <ul class="juri__list">
+                  <li class="juri__item">Certified Level 3 Trainer</li>
+                  <li class="juri__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri__item">Опыт — 4 года</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="juri__slide juri__slide-5 swiper-slide" tabindex="0">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-5-tablet@1x.webp 1x, img/juri-5-tablet@2x.webp 2x" width="260" height="300">
-              <source type="image/webp" srcset="img/juri-5-mobile@1x.webp 1x, img/juri-5-mobile@2x.webp 2x" width="227" height="280">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-5-tablet@1x.png 1x, img/juri-5-tablet@2x.png 2x" width="260" height="300">
-              <img class="juri__image" src="img/juri-5-mobile@1x.png" srcset="img/juri-5-mobile@2x.png 2x" width="227" height="280" alt="Пятый член жюри.">
-            </picture>
-            <span class="juri__name">Василиса Яровая</span>
-            <div class="juri__card">
-              <span class="juri__name juri__name--card">Василиса Яровая</span>
-              <span class="juri__text">CrossFit</span>
-              <ul class="juri__list">
-                <li class="juri__item">Certified Level 3 Trainer</li>
-                <li class="juri__item">Победитель чемпионата России по CrossFit</li>
-                <li class="juri__item">Опыт — 2 года</li>
-              </ul>
+            <div class="juri__content">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-5-tablet@1x.webp 1x, img/juri-5-tablet@2x.webp 2x" width="260" height="300">
+                <source type="image/webp" srcset="img/juri-5-mobile@1x.webp 1x, img/juri-5-mobile@2x.webp 2x" width="227" height="280">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-5-tablet@1x.png 1x, img/juri-5-tablet@2x.png 2x" width="260" height="300">
+                <img class="juri__image" src="img/juri-5-mobile@1x.png" srcset="img/juri-5-mobile@2x.png 2x" width="227" height="280" alt="Пятый член жюри.">
+              </picture>
+              <span class="juri__name">Василиса Яровая</span>
+              <div class="juri__card">
+                <span class="juri__name juri__name--card">Василиса Яровая</span>
+                <span class="juri__text">CrossFit</span>
+                <ul class="juri__list">
+                  <li class="juri__item">Certified Level 3 Trainer</li>
+                  <li class="juri__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri__item">Опыт — 2 года</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="juri__slide juri__slide-6 swiper-slide" tabindex="0">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-6-tablet@1x.webp 1x, img/juri-6-tablet@2x.webp 2x" width="260" height="300">
-              <source type="image/webp" srcset="img/juri-6-mobile@1x.webp 1x, img/juri-6-mobile@2x.webp 2x" width="227" height="280">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-6-tablet@1x.png 1x, img/juri-6-tablet@2x.png 2x" width="260" height="300">
-              <img class="juri__image" src="img/juri-6-mobile@1x.png" srcset="img/juri-6-mobile@2x.png 2x" width="227" height="280" alt="Шестой член жюри.">
-            </picture>
-            <span class="juri__name">Вадим Пушной</span>
-            <div class="juri__card">
-              <span class="juri__name juri__name--card">Вадим Пушной</span>
-              <span class="juri__text">CrossFit</span>
-              <ul class="juri__list">
-                <li class="juri__item">Certified Level 3 Trainer</li>
-                <li class="juri__item">Победитель чемпионата России по CrossFit</li>
-                <li class="juri__item">Опыт — 7 лет</li>
-              </ul>
+            <div class="juri__content">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-6-tablet@1x.webp 1x, img/juri-6-tablet@2x.webp 2x" width="260" height="300">
+                <source type="image/webp" srcset="img/juri-6-mobile@1x.webp 1x, img/juri-6-mobile@2x.webp 2x" width="227" height="280">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-6-tablet@1x.png 1x, img/juri-6-tablet@2x.png 2x" width="260" height="300">
+                <img class="juri__image" src="img/juri-6-mobile@1x.png" srcset="img/juri-6-mobile@2x.png 2x" width="227" height="280" alt="Шестой член жюри.">
+              </picture>
+              <span class="juri__name">Вадим Пушной</span>
+              <div class="juri__card">
+                <span class="juri__name juri__name--card">Вадим Пушной</span>
+                <span class="juri__text">CrossFit</span>
+                <ul class="juri__list">
+                  <li class="juri__item">Certified Level 3 Trainer</li>
+                  <li class="juri__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri__item">Опыт — 7 лет</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="juri__slide juri__slide-7 swiper-slide" tabindex="0">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-7-tablet@1x.webp 1x, img/juri-7-tablet@2x.webp 2x" width="260" height="300">
-              <source type="image/webp" srcset="img/juri-7-mobile@1x.webp 1x, img/juri-7-mobile@2x.webp 2x" width="227" height="280">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-7-tablet@1x.png 1x, img/juri-7-tablet@2x.png 2x" width="260" height="300">
-              <img class="juri__image" src="img/juri-7-mobile@1x.png" srcset="img/juri-7-mobile@2x.png 2x" width="227" height="280" alt="Седьмой член жюри.">
-            </picture>
-            <span class="juri__name">Андрей Дугин</span>
-            <div class="juri__card">
-              <span class="juri__name juri__name--card">Андрей Дугин</span>
-              <span class="juri__text">CrossFit</span>
-              <ul class="juri__list">
-                <li class="juri__item">Certified Level 3 Trainer</li>
-                <li class="juri__item">Победитель чемпионата России по CrossFit</li>
-                <li class="juri__item">Опыт — 5 лет</li>
-              </ul>
+            <div class="juri__content">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-7-tablet@1x.webp 1x, img/juri-7-tablet@2x.webp 2x" width="260" height="300">
+                <source type="image/webp" srcset="img/juri-7-mobile@1x.webp 1x, img/juri-7-mobile@2x.webp 2x" width="227" height="280">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-7-tablet@1x.png 1x, img/juri-7-tablet@2x.png 2x" width="260" height="300">
+                <img class="juri__image" src="img/juri-7-mobile@1x.png" srcset="img/juri-7-mobile@2x.png 2x" width="227" height="280" alt="Седьмой член жюри.">
+              </picture>
+              <span class="juri__name">Андрей Дугин</span>
+              <div class="juri__card">
+                <span class="juri__name juri__name--card">Андрей Дугин</span>
+                <span class="juri__text">CrossFit</span>
+                <ul class="juri__list">
+                  <li class="juri__item">Certified Level 3 Trainer</li>
+                  <li class="juri__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri__item">Опыт — 5 лет</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="juri__slide juri__slide-8 swiper-slide" tabindex="0">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-8-tablet@1x.webp 1x, img/juri-8-tablet@2x.webp 2x" width="260" height="300">
-              <source type="image/webp" srcset="img/juri-8-mobile@1x.webp 1x, img/juri-8-mobile@2x.webp 2x" width="227" height="280">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-8-tablet@1x.png 1x, img/juri-8-tablet@2x.png 2x" width="260" height="300">
-              <img class="juri__image" src="img/juri-8-mobile@1x.png" srcset="img/juri-8-mobile@2x.png 2x" width="227" height="280" alt="Восьмой член жюри.">
-            </picture>
-            <span class="juri__name">Кристина Смирнова</span>
-            <div class="juri__card">
-              <span class="juri__name juri__name--card">Кристина Смирнова</span>
-              <span class="juri__text">CrossFit</span>
-              <ul class="juri__list">
-                <li class="juri__item">Certified Level 3 Trainer</li>
-                <li class="juri__item">Победитель чемпионата России по CrossFit</li>
-                <li class="juri__item">Опыт — 8 лет</li>
-              </ul>
+            <div class="juri__content">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-8-tablet@1x.webp 1x, img/juri-8-tablet@2x.webp 2x" width="260" height="300">
+                <source type="image/webp" srcset="img/juri-8-mobile@1x.webp 1x, img/juri-8-mobile@2x.webp 2x" width="227" height="280">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-8-tablet@1x.png 1x, img/juri-8-tablet@2x.png 2x" width="260" height="300">
+                <img class="juri__image" src="img/juri-8-mobile@1x.png" srcset="img/juri-8-mobile@2x.png 2x" width="227" height="280" alt="Восьмой член жюри.">
+              </picture>
+              <span class="juri__name">Кристина Смирнова</span>
+              <div class="juri__card">
+                <span class="juri__name juri__name--card">Кристина Смирнова</span>
+                <span class="juri__text">CrossFit</span>
+                <ul class="juri__list">
+                  <li class="juri__item">Certified Level 3 Trainer</li>
+                  <li class="juri__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri__item">Опыт — 8 лет</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -428,7 +443,7 @@
               <p>Приведи друга, получи абонемент в подарок</p>
               <a class="offers__card-link" href="#">Подробнее</a>
             </div>
-            <div class="offers__card">
+            <div class="offers__card offers__card--container">
               <h3>Скидка 20%</h3>
               <p>Корпоративный фитнес с командой</p>
               <a class="offers__card-link" href="#">Подробнее</a>
@@ -719,4 +734,3 @@
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
-
